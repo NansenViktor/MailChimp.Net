@@ -8,7 +8,6 @@ using System;
 using MailChimp.Net.Core;
 using MailChimp.Net.Interfaces;
 using MailChimp.Net.Logic;
-using Microsoft.Extensions.Options;
 
 namespace MailChimp.Net
 {
@@ -61,7 +60,7 @@ namespace MailChimp.Net
             this.BatchWebHooks = new BatchWebHookLogic(MailChimpOptions);
         }
         
-        public MailChimpManager(IOptions<MailChimpOptions> optionsAccessor) : base(optionsAccessor)
+        public MailChimpManager(MailChimpOptions options) : base(options)
         {
             // The base implementation already sets the mail chimp options
             this.Activities = new ActivityLogic(MailChimpOptions);

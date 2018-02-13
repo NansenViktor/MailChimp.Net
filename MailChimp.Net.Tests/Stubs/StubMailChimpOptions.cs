@@ -1,8 +1,7 @@
-using Microsoft.Extensions.Options;
 
 namespace MailChimp.Net.Tests
 {
-    public class StubMailchimpOptions : IOptions<MailChimpOptions>
+    public class StubMailchimpOptions : MailChimpOptions
     {
         private readonly MailChimpOptions _options;
 
@@ -18,7 +17,7 @@ namespace MailChimp.Net.Tests
 
         public StubMailchimpOptions(string datacenter, string token)
         {
-            _options = new MailChimpOptions { DataCenter = datacenter,  OauthToken = token };
+            _options = new MailChimpOptions { DataCenter = datacenter, OauthToken = token };
         }
 
         public MailChimpOptions Value => _options;
