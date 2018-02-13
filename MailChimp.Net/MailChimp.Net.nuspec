@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>MailChimp.Net.V3</id>
-        <version>3.0.0.0</version>
+        <version>3.2.0.0</version>
         <title>MailChimp.Net.V3</title>
         <authors>Brandon Seydel (DevSquad)</authors>
         <owners>MailChimp.Net.V3</owners>
@@ -18,6 +18,18 @@
             A very fast, thin, and intuitive .NET Wrapper for the Mail Chimp v3.0 API.
         </summary>
         <dependencies>
+            <group targetFramework=".NETStandard1.3">
+                <dependency id="Microsoft.Extensions.Configuration" version="1.1.1" exclude="Build,Analyzers" />
+                <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+                <dependency id="Microsoft.Extensions.Options" version="1.1.2" exclude="Build,Analyzers" />
+                <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+            </group>
+            <group targetFramework=".NETFramework4.5.1">
+                <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+            </group>
         </dependencies>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5.1" />
+        </frameworkAssemblies>
     </metadata>
 </package>
