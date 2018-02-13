@@ -47,8 +47,8 @@
     <PackageIconUrl>http://developer.mailchimp.com/documentation/mailchimp/img/freddie_o.svg</PackageIconUrl>
     <PackageTags>MailChimp Mail Chimp 3.0 v3.0 MailChimp.Net.V3 MailChimpv3.0 MailChimpv3 MailChimp3</PackageTags>
     <PackageLicenseUrl>https://github.com/brandonseydel/MailChimp.Net/blob/master/LICENSE.txt</PackageLicenseUrl>
-    <AssemblyVersion>3.3.0.1</AssemblyVersion>
-    <FileVersion>3.3.0.1</FileVersion>
+    <AssemblyVersion>3.3.1.0</AssemblyVersion>
+    <FileVersion>3.3.1.0</FileVersion>
 
   </PropertyGroup>
   <ItemGroup>
