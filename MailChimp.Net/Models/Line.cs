@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace MailChimp.Net.Models
@@ -31,6 +31,9 @@ namespace MailChimp.Net.Models
 
         [JsonProperty("price")]
         public double Price { get; set; }
+
+        [JsonProperty("discount")]
+        public double Discount { get; set; }
 
         [JsonProperty("_links")]
         public IList<Link> Links { get; set; }

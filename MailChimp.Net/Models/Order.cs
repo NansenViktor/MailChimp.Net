@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using MailChimp.Net.Core;
 
@@ -56,6 +56,8 @@ namespace MailChimp.Net.Models
         [JsonProperty("billing_address")]
         public Address BillingAddress { get; set; }
 
+        [JsonProperty("discount_total")]
+        public double DiscountTotal { get; set; }
 
         [JsonProperty("updated_at_foreign")]
         public string UpdatedAtForeign { get; set; }
